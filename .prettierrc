@@ -1,0 +1,9 @@
+{
+  "semi": true,
+  "endOfLine": "lf",
+  "printWidth": 120,
+  "singleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "spaceBeforeFunctionParen": true
+}
