@@ -1,0 +1,315 @@
+[
+  {
+    "layout": {
+      "seoMetadataLayoutPreviewTitle": null,
+      "defaultPage": true,
+      "seoMetaDescription": "",
+      "notes": null,
+      "pageAddress": "home",
+      "seoMetaKeywords": "",
+      "pageTitle": "",
+      "displayName": "Home Layout",
+      "repositoryId": "homePageLayout",
+      "layoutViewports": ""
+    },
+    "defaultPage": true,
+    "pageType": "home",
+    "route": "/home",
+    "pageTypeId": "homePageType",
+    "displayName": "Home",
+    "name": "home",
+    "repositoryId": "homePage"
+  },
+  {
+    "layout": {
+      "layoutCollections": "",
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "category",
+      "layoutPreviewTitle": null,
+      "displayName": "Collection Layout",
+      "repositoryId": "catPageLayout",
+      "layoutAssignmentTitle": null,
+      "layoutViewports": "",
+      "collectionId": "cat90042"
+    },
+    "defaultPage": true,
+    "pageType": "category",
+    "route": "/category",
+    "pageTypeId": "categoryPageType",
+    "displayName": "Collection",
+    "name": "category",
+    "repositoryId": "categoryPage"
+  },
+  {
+    "layout": {
+      "layoutProductTypes": "",
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "product",
+      "productId": "xprod2535",
+      "layoutPreviewTitle": null,
+      "displayName": "Product Layout",
+      "repositoryId": "prodPageLayout",
+      "layoutAssignmentTitle": null,
+      "layoutViewports": "",
+      "layoutProducts": ""
+    },
+    "defaultPage": true,
+    "pageType": "product",
+    "route": "/product",
+    "pageTypeId": "productPageType",
+    "displayName": "Product",
+    "name": "product",
+    "repositoryId": "productPage"
+  },
+  {
+    "layout": {
+      "cartPreviewTitle": null,
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "cart",
+      "pageTitle": "",
+      "displayName": "Cart Layout",
+      "repositoryId": "shoppingCartSummaryPageLayout",
+      "skuIds": [
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        }
+      ]
+    },
+    "defaultPage": true,
+    "pageType": "cart",
+    "route": "/cart",
+    "pageTypeId": "shoppingCartSummaryPageType",
+    "displayName": "Cart",
+    "name": "cart",
+    "repositoryId": "shoppingCartSummaryPage"
+  },
+  {
+    "layout": {
+      "cartPreviewTitle": null,
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "checkout",
+      "pageTitle": "",
+      "displayName": "Checkout Layout",
+      "repositoryId": "checkoutPageLayout",
+      "skuIds": [
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        }
+      ]
+    },
+    "defaultPage": true,
+    "pageType": "checkout",
+    "route": "/checkout",
+    "pageTypeId": "checkoutPageType",
+    "displayName": "Checkout",
+    "name": "checkout",
+    "repositoryId": "checkoutPage"
+  },
+  {
+    "layout": {
+      "cartPreviewTitle": null,
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "confirmation",
+      "pageTitle": "",
+      "displayName": "Order Confirmation Layout",
+      "repositoryId": "checkoutConfirmationPageLayout",
+      "skuIds": [
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        },
+        {
+          "quantity": "",
+          "productId": ""
+        }
+      ]
+    },
+    "defaultPage": true,
+    "pageType": "confirmation",
+    "route": "/confirmation",
+    "pageTypeId": "checkoutConfirmationPageType",
+    "displayName": "Confirmation",
+    "name": "confirmation",
+    "repositoryId": "checkoutConfirmationPage"
+  },
+  {
+    "layout": {
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "aboutUs",
+      "displayName": "About Us Layout",
+      "repositoryId": "aboutUsPageLayout"
+    },
+    "defaultPage": true,
+    "pageType": "article",
+    "route": "/aboutUs",
+    "pageTypeId": "articlePageType",
+    "displayName": "About Us",
+    "name": "aboutUs",
+    "repositoryId": "aboutUsPage"
+  },
+  {
+    "layout": {
+      "defaultPage": false,
+      "notes": null,
+      "pageAddress": "contactUs",
+      "displayName": "Contact Us Layout",
+      "repositoryId": "contactUsPageLayout"
+    },
+    "defaultPage": false,
+    "pageType": "article",
+    "route": "/contactUs",
+    "pageTypeId": "articlePageType",
+    "displayName": "Contact Us",
+    "name": "contactUs",
+    "repositoryId": "contactUsPage"
+  },
+  {
+    "layout": {
+      "defaultPage": false,
+      "notes": null,
+      "pageAddress": "privacy",
+      "displayName": "Privacy Layout",
+      "repositoryId": "privacyPageLayout"
+    },
+    "defaultPage": false,
+    "pageType": "article",
+    "route": "/privacy",
+    "pageTypeId": "articlePageType",
+    "displayName": "Privacy",
+    "name": "privacy",
+    "repositoryId": "privacyPage"
+  },
+  {
+    "layout": {
+      "defaultPage": false,
+      "notes": null,
+      "pageAddress": "returns",
+      "displayName": "Returns Layout",
+      "repositoryId": "returnsPageLayout"
+    },
+    "defaultPage": false,
+    "pageType": "article",
+    "route": "/returns",
+    "pageTypeId": "articlePageType",
+    "displayName": "Returns",
+    "name": "returns",
+    "repositoryId": "returnsPage"
+  },
+  {
+    "layout": {
+      "defaultPage": false,
+      "notes": null,
+      "pageAddress": "shipping",
+      "displayName": "Shipping Layout",
+      "repositoryId": "shippingPageLayout"
+    },
+    "defaultPage": false,
+    "pageType": "article",
+    "route": "/shipping",
+    "pageTypeId": "articlePageType",
+    "displayName": "Shipping",
+    "name": "shipping",
+    "repositoryId": "shippingPage"
+  },
+  {
+    "layout": {
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "404",
+      "displayName": "Error Layout",
+      "pageTitle": "",
+      "repositoryId": "404PageLayout"
+    },
+    "defaultPage": true,
+    "pageType": "error",
+    "route": "/404",
+    "pageTypeId": "errorPageType",
+    "displayName": "Page Not Found",
+    "name": "404",
+    "repositoryId": "404page"
+  },
+  {
+    "layout": {
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "searchresults",
+      "displayName": "Search Results Layout",
+      "repositoryId": "searchResultsPageLayout"
+    },
+    "defaultPage": true,
+    "pageType": "searchResults",
+    "route": "/searchresults",
+    "pageTypeId": "searchResultsPageType",
+    "displayName": "Search Results",
+    "name": "searchresults",
+    "repositoryId": "searchResultsPage"
+  },
+  {
+    "layout": {
+      "defaultPage": true,
+      "notes": null,
+      "pageAddress": "noSearchResults",
+      "displayName": "No Search Results Layout",
+      "repositoryId": "noSearchResultsPageLayout"
+    },
+    "defaultPage": true,
+    "pageType": "noSearchResults",
+    "route": "/noSearchResults",
+    "pageTypeId": "noSearchResultsPageType",
+    "displayName": "No Search Results",
+    "name": "noSearchResults",
+    "repositoryId": "noSearchResultsPage"
+  }
+]

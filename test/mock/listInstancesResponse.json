@@ -1,0 +1,139 @@
+{
+  "links": [
+    {
+      "rel": "self",
+      "href": "/ccadmin/v1/widgetDescriptors/instances"
+    }
+  ],
+  "autoWrap": true,
+  "items": [
+    {
+      "isLatestVersion":true,
+      "instances":[
+        {
+          "pages":[
+            "product"
+          ],
+          "pageIds":[
+            "productPage"
+          ],
+          "displayName":"Add Product To Wish List Widget",
+          "repositoryId":"productAddToSpaceWidgetInst",
+          "id":"productAddToSpaceWidgetInst"
+        }
+      ],
+      "displayName":"Add Product To Space",
+      "availableToAllPages":false,
+      "jsEditable":false,
+      "minWidth":1,
+      "version":1,
+      "layouts":[
+      ],
+      "javascript":[
+      ],
+      "widgetType":"productAddToSpaceWidget",
+      "latestVersion":1,
+      "repositoryId":"productAddToSpaceWidget",
+      "editableWidget":false,
+      "id":"productAddToSpaceWidget",
+      "defaultLayout":null,
+      "pageTypes":[
+      ],
+      "configurable":false
+    },
+    {
+      "isLatestVersion":true,
+      "instances":[
+        {
+          "pages":[
+            "cart"
+          ],
+          "pageIds":[
+            "shoppingCartSummaryWithShippingPage"
+          ],
+          "displayName":"Cart Shipping Widget",
+          "repositoryId":"cartShippingDetailsInst",
+          "id":"cartShippingDetailsInst"
+        }
+      ],
+      "displayName":"Cart Shipping",
+      "availableToAllPages":false,
+      "jsEditable":false,
+      "minWidth":1,
+      "version":1,
+      "layouts":[
+        {
+          "name":"cartShippingDetailsDefaultLayout",
+          "repositoryId":"cartShippingDetailsDefaultLayout",
+          "description":"Default Panel",
+          "sourceLocation":"cartShippingDetailsDefaultLayout/widget.template",
+          "id":"cartShippingDetailsDefaultLayout"
+        }
+      ],
+      "javascript":[
+      ],
+      "widgetType":"cartShippingDetails",
+      "latestVersion":1,
+      "repositoryId":"cartShippingDetails",
+      "editableWidget":true,
+      "id":"cartShippingDetails",
+      "defaultLayout":{
+        "name":"cartShippingDetailsDefaultLayout",
+        "repositoryId":"cartShippingDetailsDefaultLayout",
+        "description":"Default Panel",
+        "sourceLocation":"cartShippingDetailsDefaultLayout/widget.template",
+        "id":"cartShippingDetailsDefaultLayout"
+      },
+      "pageTypes":[
+        {
+          "repositoryId":"shoppingCartSummaryPageType",
+          "alias":"/cart",
+          "id":"shoppingCartSummaryPageType",
+          "shortName":"cart"
+        }
+      ],
+      "configurable":false
+    },
+    {
+      "isLatestVersion":true,
+      "instances":[
+        {
+          "pages":[
+            "checkout"
+          ],
+          "pageIds":[
+            "checkoutPageWithGiftCard",
+            "checkoutPage"
+          ],
+          "displayName":"Cart Summary Widget",
+          "repositoryId":"checkoutCartSummaryInst",
+          "id":"checkoutCartSummaryInst"
+        }
+      ],
+      "displayName":"Cart Summary",
+      "availableToAllPages":false,
+      "jsEditable":false,
+      "minWidth":1,
+      "version":1,
+      "layouts":[
+      ],
+      "javascript":[
+      ],
+      "widgetType":"checkoutCartSummary",
+      "latestVersion":1,
+      "repositoryId":"checkoutCartSummary",
+      "editableWidget":true,
+      "id":"checkoutCartSummary",
+      "defaultLayout":null,
+      "pageTypes":[
+        {
+          "repositoryId":"checkoutPageType",
+          "alias":"/checkout",
+          "id":"checkoutPageType",
+          "shortName":"checkout"
+        }
+      ],
+      "configurable":true
+    }
+  ]
+}

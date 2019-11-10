@@ -3,7 +3,7 @@ export const listInstancesFactory = (axiosInstance: any) => async () => {
   return items.reduce(
     (instances: any[], widget: any) => [
       ...instances,
-      ...widget.instances.map((instance: any) => ({
+      ...(widget.instances || []).map((instance: any) => ({
         ...instance,
         descriptor: {
           ...widget,

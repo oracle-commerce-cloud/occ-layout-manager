@@ -1,4 +1,3 @@
-
 export const listLayoutsFactory = (axiosInstance: any) => () =>
   axiosInstance
     .get("/layouts")

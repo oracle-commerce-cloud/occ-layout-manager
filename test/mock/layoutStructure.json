@@ -1,0 +1,233 @@
+{
+  "layout": {
+    "regions": [
+      {
+        "name": "header",
+        "width": 12,
+        "repositoryId": "headerRegionHomePage",
+        "widgets": [
+          {
+            "displayName": "Header Widget",
+            "repositoryId": "headerWidgetInst",
+            "descriptor": {
+              "repositoryId": "headerWidget",
+              "minWidth": 1,
+              "editableWidget": true
+            }
+          }
+        ],
+        "height": 300
+      },
+      {
+        "name": "megaMenu",
+        "width": 12,
+        "repositoryId": "megaMenuRegionHomePage",
+        "widgets": [
+          {
+            "displayName": "Collection Navigation Widget",
+            "repositoryId": "megaMenuInst",
+            "descriptor": {
+              "repositoryId": "megaMenu",
+              "minWidth": 1,
+              "editableWidget": true
+            }
+          }
+        ],
+        "height": 300
+      },
+      {
+        "name": "hero",
+        "width": 12,
+        "repositoryId": "heroRegion12col",
+        "widgets": [
+          {
+            "displayName": "Hero",
+            "repositoryId": "heroWidgetInst",
+            "descriptor": {
+              "repositoryId": "heroWidget",
+              "minWidth": 1,
+              "editableWidget": true
+            }
+          }
+        ],
+        "height": 300
+      },
+      {
+        "name": "footer",
+        "width": 12,
+        "repositoryId": "footerRegionHomePage",
+        "widgets": [
+          {
+            "displayName": "Footer Widget",
+            "repositoryId": "footerInst",
+            "descriptor": {
+              "repositoryId": "footer",
+              "minWidth": 1,
+              "editableWidget": true
+            }
+          }
+        ],
+        "height": 300
+      }
+    ],
+    "displayName": "Home Layout",
+    "name": "homePageLayout",
+    "repositoryId": "homePageLayout"
+  },
+  "_links": {
+    "self": {
+      "href": "/ccadminui/v1/layouts/homePageLayout/structure"
+    }
+  },
+  "widgetPages": {
+    "headerWidgetInst": [
+      {
+        "repositoryId": "404page"
+      },
+      {
+        "repositoryId": "aboutUsPage"
+      },
+      {
+        "repositoryId": "categoryPage"
+      },
+      {
+        "repositoryId": "contactUsPage"
+      },
+      {
+        "repositoryId": "homePage"
+      },
+      {
+        "repositoryId": "noSearchResultsPage"
+      },
+      {
+        "repositoryId": "orderHistoryPage"
+      },
+      {
+        "repositoryId": "privacyPage"
+      },
+      {
+        "repositoryId": "productPage"
+      },
+      {
+        "repositoryId": "profilePage"
+      },
+      {
+        "repositoryId": "returnsPage"
+      },
+      {
+        "repositoryId": "searchResultsPage"
+      },
+      {
+        "repositoryId": "shippingPage"
+      },
+      {
+        "repositoryId": "shoppingCartSummaryPage"
+      },
+      {
+        "repositoryId": "signupPage"
+      }
+    ],
+    "megaMenuInst": [
+      {
+        "repositoryId": "aboutUsPage"
+      },
+      {
+        "repositoryId": "categoryPage"
+      },
+      {
+        "repositoryId": "contactUsPage"
+      },
+      {
+        "repositoryId": "homePage"
+      },
+      {
+        "repositoryId": "noSearchResultsPage"
+      },
+      {
+        "repositoryId": "orderHistoryPage"
+      },
+      {
+        "repositoryId": "privacyPage"
+      },
+      {
+        "repositoryId": "productPage"
+      },
+      {
+        "repositoryId": "profilePage"
+      },
+      {
+        "repositoryId": "returnsPage"
+      },
+      {
+        "repositoryId": "searchResultsPage"
+      },
+      {
+        "repositoryId": "shippingPage"
+      },
+      {
+        "repositoryId": "shoppingCartSummaryPage"
+      },
+      {
+        "repositoryId": "signupPage"
+      }
+    ],
+    "footerInst": [
+      {
+        "repositoryId": "checkoutConfirmationPage"
+      },
+      {
+        "repositoryId": "privacyPage"
+      },
+      {
+        "repositoryId": "aboutUsPage"
+      },
+      {
+        "repositoryId": "shoppingCartSummaryPage"
+      },
+      {
+        "repositoryId": "checkoutPage"
+      },
+      {
+        "repositoryId": "orderHistoryPage"
+      },
+      {
+        "repositoryId": "returnsPage"
+      },
+      {
+        "repositoryId": "profilePage"
+      },
+      {
+        "repositoryId": "contactUsPage"
+      },
+      {
+        "repositoryId": "categoryPage"
+      },
+      {
+        "repositoryId": "searchResultsPage"
+      },
+      {
+        "repositoryId": "404page"
+      },
+      {
+        "repositoryId": "signupPage"
+      },
+      {
+        "repositoryId": "productPage"
+      },
+      {
+        "repositoryId": "noSearchResultsPage"
+      },
+      {
+        "repositoryId": "homePage"
+      },
+      {
+        "repositoryId": "shippingPage"
+      }
+    ],
+    "heroWidgetInst": [
+      {
+        "repositoryId": "homePage"
+      }
+    ]
+  }
+}

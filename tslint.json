@@ -48,8 +48,7 @@
     "no-var-keyword": true,
     "semicolon": [
       true,
-      "always",
-      "ignore-bound-class-methods"
+      "always"
     ],
     "whitespace": [
       true,

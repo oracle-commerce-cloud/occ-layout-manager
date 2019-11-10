@@ -1,4 +1,5 @@
 import axios from "axios";
+import axiosRetry from "axios-retry";
 import { loginFactory } from "./login";
 import { listLayoutsFactory } from "./listLayouts";
 import { listInstancesFactory } from "./listInstances";
@@ -11,23 +12,31 @@ export interface UseApiProps {
 }
 
 export interface UseApi {
-  login: () => Promise<any>;
+  login: () => Promise<string>;
   listLayouts: () => Promise<any>;
   listInstances: () => Promise<any>;
   getLayoutStructure: (repositoryId: string) => Promise<any>;
   saveLayoutStructure: (repositoryId: string, data: { layout: { regions: any[] } }) => Promise<any>;
 }
 
-export const useApi = ({ node, applicationKey }: UseApiProps): UseApi => {
-  const axiosInstance: any = axios.create({
-    baseURL: `${node}/;/ccadmin/v1`.replace(/\/+;\/+/i, "/"),
-  });
+// cache
+const clientMap: Map<string, UseApi> = new Map<string, UseApi>();
 
-  return {
-    login: loginFactory(axiosInstance, applicationKey),
-    listLayouts: listLayoutsFactory(axiosInstance),
-    listInstances: listInstancesFactory(axiosInstance),
-    getLayoutStructure: getLayoutStructureFactory(axiosInstance),
-    saveLayoutStructure: saveLayoutStructureFactory(axiosInstance),
-  };
+export const useApi = ({ node, applicationKey }: UseApiProps): UseApi => {
+  if (!clientMap.has(applicationKey)) {
+    const axiosInstance: any = axios.create({
+      baseURL: `${node}/;/ccadmin/v1`.replace(/\/+;\/+/i, "/"),
+    });
+
+    axiosRetry(axiosInstance, { retries: 3 });
+
+    clientMap.set(applicationKey, {
+      login: loginFactory(axiosInstance, applicationKey),
+      listLayouts: listLayoutsFactory(axiosInstance),
+      listInstances: listInstancesFactory(axiosInstance),
+      getLayoutStructure: getLayoutStructureFactory(axiosInstance),
+      saveLayoutStructure: saveLayoutStructureFactory(axiosInstance),
+    });
+  }
+  return clientMap.get(applicationKey);
 };
