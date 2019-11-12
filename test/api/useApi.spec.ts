@@ -5,19 +5,17 @@ const { node, applicationKey } = process.env;
 const client = useApi({ node, applicationKey });
 
 describe("useApi", () => {
-
   describe("create client", () => {
     it("should be able to create client without crashing", () => {
-      expect(client).toBeDefined();
-      expect(client).not.toBeNull();
+      expect(client).toBeTruthy();
     });
 
     it("should implement the UseApi interface", () => {
-      expect(client.login).toBeDefined();
-      expect(client.listLayouts).toBeDefined();
-      expect(client.listInstances).toBeDefined();
-      expect(client.getLayoutStructure).toBeDefined();
-      expect(client.saveLayoutStructure).toBeDefined();
+      expect(client.login).toBeTruthy();
+      expect(client.listLayouts).toBeTruthy();
+      expect(client.listInstances).toBeTruthy();
+      expect(client.getLayoutStructure).toBeTruthy();
+      expect(client.saveLayoutStructure).toBeTruthy();
     });
   });
 

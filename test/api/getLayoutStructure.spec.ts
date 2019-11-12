@@ -8,8 +8,7 @@ const { getLayoutStructure } = useApi({ node, applicationKey });
 
 describe("useApi.getLayoutStructure", () => {
   it("should be defined", async () => {
-    expect(getLayoutStructure).toBeDefined();
-    expect(getLayoutStructure).not.toBeNull();
+    expect(getLayoutStructure).toBeTruthy();
   });
 
   it("get the structure of a layout including regions and widgets based on the id=homePageLayout", async () => {

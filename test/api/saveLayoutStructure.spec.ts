@@ -8,8 +8,7 @@ const { saveLayoutStructure } = useApi({ node, applicationKey });
 
 describe("useApi.saveLayoutStructure", () => {
   it("should be defined", async () => {
-    expect(saveLayoutStructure).toBeDefined();
-    expect(saveLayoutStructure).not.toBeNull();
+    expect(saveLayoutStructure).toBeTruthy();
   });
 
   it("save the structure of a layout including regions and widgets based on the id=homePageLayout", async () => {

@@ -8,10 +8,8 @@ const { node, applicationKey } = process.env || { node: "https://test.com", appl
 const { listInstances } = useApi({ node, applicationKey });
 
 describe("useApi.listInstances", () => {
-
   it("should be defined", async () => {
-    expect(listInstances).toBeDefined();
-    expect(listInstances).not.toBeNull();
+    expect(listInstances).toBeTruthy();
   });
 
   it("get all widget descriptors along with their associated instances.", async () => {

@@ -1,0 +1,46 @@
+{
+  "resources": {
+    "spinnerSucceedMsg": "Génial: la merde est finie",
+    "InvalidCredentials": "InvalidCredentials: applicationKey ou noeud incorrect.",
+    "spinnerLoginMsg": "Authentification...",
+    "spinnerLoginSucceedMsg": "Confirmer vos droits d'accès ...",
+    "spinnerMsg1": "😑  Cela a pris un peu plus longtemps",
+    "spinnerMsg2": "😅  Nous avons les mêmes problèmes",
+    "spinnerMsg3": "🤔  Etes-vous sûr de vos informations d'identification?",
+    "spinnerMsg4": "😧  Nous allons réessayer",
+    "spinnerMsg5": "😓  En cours ...",
+    "spinnerMsg6": "😰  Nous avons essayé trois fois avant d'abandonner, voulez-vous essayer plus tard s'il vous plaît?",
+    "spinnerMsg7": "🤷  Il semble que vous ayez des problèmes de réseau",
+
+    "refreshAccessToken": "Actualiser le jeton d'accès pour l'API d'administration",
+    "fetch&prepareLayoutStructure": "Préparer la structure de présentation pour __repositoryId__",
+    "fetch&updateLayoutsStructureWithParams": "Récupérer et mettre à jour la structure de présentation.",
+    "fetch&updateLayoutsStructure": "Récupérer et mettre à jour la structure de présentation.",
+    "fetch&FilterListLayouts": "Obtenir et filtrer la liste des mises en page.",
+    "fetchListLayouts": "Récupérer la liste des mises en page.",
+    "filterListLayouts": "Filtrer les mises en page.",
+
+    "programDescription": "En cours",
+
+    "operationType": "Choisissez une opération dans la liste ci-dessous",
+    "removeInstance": "Détacher une instance de toutes les mises en page.",
+    "replaceInstance": "Remplacer une instance par une autre.",
+    "insertInstanceBefore": "Insérer une instance avant une autre.",
+    "insertInstanceAfter": "Insérer une instance après une autre.",
+    "moveInstanceBefore": "Déplacer une instance avant une autre.",
+    "moveInstanceAfter": "Déplacer une instance après une autre.",
+
+    "removeInstance.mainInstance": "Sélectionnez l'instance à déconnecter",
+    "replaceInstance.mainInstance": "Sélectionnez l'instance souhaitée à insérer",
+    "insertInstanceBefore.mainInstance": "Sélectionnez une instance à insérer avant",
+    "insertInstanceAfter.mainInstance": "Sélectionnez une instance à insérer après",
+    "moveInstanceBefore.mainInstance": "Sélectionnez une instance à déplacer avant",
+    "moveInstanceAfter.mainInstance": "Sélectionnez une instance à déplacer après",
+
+    "replaceInstance.refInstance": "Sélectionnez l'instance à déconnecter",
+    "insertInstanceBefore.refInstance": "Sélectionnez une instance de référence",
+    "insertInstanceAfter.refInstance": "Sélectionnez une instance de référence",
+    "moveInstanceBefore.refInstance": "Sélectionnez une instance de référence",
+    "moveInstanceAfter.refInstance": "Sélectionnez une instance de référence"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resources": {
+    "spinnerSucceedMsg": "Great: the shit is done 🎉",
+    "InvalidCredentials": "InvalidCredentials: Incorrect applicationKey or node.",
+    "spinnerLoginMsg": "Authentication...",
+    "spinnerLoginSucceedMsg": "Confirming your access rights...",
+    "spinnerMsg1": "😑  It took a little longer",
+    "spinnerMsg2": "😅  We have same problems",
+    "spinnerMsg3": "🤔  Are you sure about your credentials ?",
+    "spinnerMsg4": "😧  We'll try again",
+    "spinnerMsg5": "😓  In progress...",
+    "spinnerMsg6": "😰  We tried three times before giving up, will you try later please.",
+    "spinnerMsg7": "🤷  It looks like you have some networking problems",
+
+    "refreshAccessToken": "Refresh access token for the Admin API",
+    "fetch&prepareLayoutStructure": "Prepare layout structure for __repositoryId__",
+    "fetch&updateLayoutsStructureWithParams": "Fetch & update layout structure.",
+    "fetch&updateLayoutsStructure": "Fetch & update layout structure.",
+    "fetch&FilterListLayouts": "Get and filter the list of layouts.",
+    "fetchListLayouts": "Fetch the list of layouts.",
+    "filterListLayouts": "Filter the layouts.",
+
+    "programDescription": "In progress",
+
+    "operationType": "Choose an operation from the list below",
+    "removeInstance": "Detach an instance from all layouts.",
+    "replaceInstance": "Replace an instance by another one.",
+    "insertInstanceBefore": "Insert an instance before another one.",
+    "insertInstanceAfter": "Insert an instance after another one.",
+    "moveInstanceBefore": "Move an instance before another one.",
+    "moveInstanceAfter": "Move an instance after another one.",
+
+    "removeInstance.mainInstance": "Select the desired instance to be detached",
+    "replaceInstance.mainInstance": "Select the desired instance to be inserted",
+    "insertInstanceBefore.mainInstance": "Select an instance to insert before",
+    "insertInstanceAfter.mainInstance": "Select an instance to insert after",
+    "moveInstanceBefore.mainInstance": "Select an instance to move before",
+    "moveInstanceAfter.mainInstance": "Select an instance to move after",
+    
+    "replaceInstance.refInstance": "Select the desired instance to be detached",
+    "insertInstanceBefore.refInstance": "Select a reference instance",
+    "insertInstanceAfter.refInstance": "Select a reference instance",
+    "moveInstanceBefore.refInstance": "Select a reference instance",
+    "moveInstanceAfter.refInstance": "Select a reference instance"
+  }
+}

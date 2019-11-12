@@ -9,8 +9,7 @@ const { login } = useApi({ node, applicationKey });
 
 describe("useApi.login", () => {
   it("should be defined", async () => {
-    expect(login).toBeDefined();
-    expect(login).not.toBeNull();
+    expect(login).toBeTruthy();
   });
 
   it("get a new access token", async () => {
@@ -29,7 +28,7 @@ describe("useApi.login", () => {
     // c) if the payload was correct (grant_type, Authorization, Content-Type)
     expect(mockAxios.post).toHaveBeenCalledWith("/login", qs.stringify({ grant_type: "client_credentials" }), {
       headers: {
-        Authorization: `Bearer ${applicationKey}`,
+        "Authorization": `Bearer ${applicationKey}`,
         "Content-Type": "application/x-www-form-urlencoded",
       },
     });

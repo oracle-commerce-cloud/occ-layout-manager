@@ -8,10 +8,8 @@ const { node, applicationKey } = process.env || { node: "https://test.com", appl
 const { listLayouts } = useApi({ node, applicationKey });
 
 describe("useApi.listLayouts", () => {
-
   it("should be defined", async () => {
-    expect(listLayouts).toBeDefined();
-    expect(listLayouts).not.toBeNull();
+    expect(listLayouts).toBeTruthy();
   });
 
   it("list all the layouts.", async () => {
