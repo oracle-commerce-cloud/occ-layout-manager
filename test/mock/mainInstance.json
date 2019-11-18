@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "product"
+  ],
+  "pageIds": [
+    "productPage"
+  ],
+  "displayName": "Add Product To Wish List Widget",
+  "repositoryId": "productAddToSpaceWidgetInst",
+  "id": "productAddToSpaceWidgetInst",
+  "descriptor": {
+    "isLatestVersion": true,
+    "displayName": "Add Product To Space",
+    "availableToAllPages": false,
+    "jsEditable": false,
+    "minWidth": 1,
+    "version": 1,
+    "layouts": [],
+    "javascript": [],
+    "widgetType": "productAddToSpaceWidget",
+    "latestVersion": 1,
+    "repositoryId": "productAddToSpaceWidget",
+    "editableWidget": false,
+    "id": "productAddToSpaceWidget",
+    "defaultLayout": null,
+    "pageTypes": [],
+    "configurable": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Collection Navigation Widget",
+  "repositoryId": "megaMenuInst",
+  "descriptor": {
+    "repositoryId": "megaMenu",
+    "minWidth": 1,
+    "editableWidget": true
+  }
+}

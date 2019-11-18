@@ -1,0 +1,9 @@
+{
+  "displayName": "Hero",
+  "repositoryId": "heroWidgetInst",
+  "descriptor": {
+    "repositoryId": "heroWidget",
+    "minWidth": 1,
+    "editableWidget": true
+  }
+}
