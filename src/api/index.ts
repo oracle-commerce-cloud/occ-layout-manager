@@ -5,6 +5,7 @@ import { listLayoutsFactory } from "./listLayouts";
 import { listInstancesFactory } from "./listInstances";
 import { getLayoutStructureFactory } from "./getLayoutStructure";
 import { saveLayoutStructureFactory } from "./saveLayoutStructure";
+import { LayoutStructure, WidgetInstance } from "../types/api/layoutStructure";
 
 export interface UseApiProps {
   node: string;
@@ -14,9 +15,9 @@ export interface UseApiProps {
 export interface UseApi {
   login: () => Promise<string>;
   listLayouts: () => Promise<any>;
-  listInstances: () => Promise<any>;
+  listInstances: () => Promise<WidgetInstance[]>;
   getLayoutStructure: (repositoryId: string) => Promise<any>;
-  saveLayoutStructure: (repositoryId: string, data: { layout: { regions: any[] } }) => Promise<any>;
+  saveLayoutStructure: (repositoryId: string, data: { layout: LayoutStructure }) => Promise<LayoutStructure>;
 }
 
 // cache

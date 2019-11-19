@@ -1,6 +1,6 @@
 import Listr from "listr";
 import program from "commander";
-import { useApi, useApiProps } from "./api";
+import { useApi, UseApiProps } from "./api";
 import { Observable } from "rxjs";
 
 program
@@ -19,7 +19,7 @@ program.parse(process.argv);
 
 const { selectedInstance, newInstance } = program;
 const { login, listLayouts, listInstances, getLayoutStructure, saveLayoutStructure } = useApi(
-  (program as any) as useApiProps,
+  (program as any) as UseApiProps,
 );
 const timer = "first login";
 

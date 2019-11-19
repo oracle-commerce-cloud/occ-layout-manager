@@ -14,8 +14,8 @@ interface FindInstanceResult {
 export function findInstance ({ instanceId, layout }: FindInstanceParams): FindInstanceResult {
   let widgetIndex: number;
   let widget: WidgetInstance;
-  const region = layout.regions.find((reg: any) => {
-    widgetIndex = reg.widgets.findIndex(({ repositoryId: id }: any) => id === instanceId);
+  const region = layout.regions.find((reg: Region) => {
+    widgetIndex = reg.widgets.findIndex(({ repositoryId: id }: WidgetInstance) => id === instanceId);
     widget = reg.widgets[widgetIndex];
     return widget;
   });
