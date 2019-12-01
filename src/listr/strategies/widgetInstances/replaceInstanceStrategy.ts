@@ -1,4 +1,4 @@
-import { IOperationStrategyParams as Props } from "../../types/listr/InstanceOperationStrategy";
+import { IOperationStrategyParams as Props } from "../../../types/listr/InstanceOperationStrategy";
 
 export const replaceInstanceStrategy = ({ layout, widget, refInstance, mainInstance }: Props) => {
   const source = mainInstance.descriptor.source;

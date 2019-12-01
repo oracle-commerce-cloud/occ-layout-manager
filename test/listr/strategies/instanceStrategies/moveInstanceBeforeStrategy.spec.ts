@@ -1,17 +1,17 @@
-import { moveInstanceAfterStrategy } from "../../../src/listr/strategies/moveInstanceAfterStrategy";
+import { moveInstanceBeforeStrategy } from "@listr/strategies/widgetInstances/moveInstanceBeforeStrategy";
 
-import { findInstance } from "../../../src/helpers/findInstance";
+import { findInstance } from "@helpers/findInstance";
 
-import layoutStructure from "../../mock/layoutStructure.json";
+import layoutStructure from "../../../mock/layoutStructure.json";
 
-describe("moveInstanceAfterStrategy", () => {
+describe("moveInstanceBeforeStrategy", () => {
   it("should be defined", async () => {
-    expect(moveInstanceAfterStrategy).toBeTruthy();
+    expect(moveInstanceBeforeStrategy).toBeTruthy();
   });
 
-  it("should insert mainInstance After refInstance.", async () => {
-    const refInstance = require("../../mock/refInstance.json");
-    const mainInstance = require("../../mock/moveMainInstance.json");
+  it("should insert mainInstance Before refInstance.", async () => {
+    const refInstance = require("../../../mock/refInstance.json");
+    const mainInstance = require("../../../mock/moveMainInstance.json");
     const { layout } = JSON.parse(JSON.stringify(layoutStructure));
     const { region, widget, widgetIndex } = findInstance({ layout, instanceId: refInstance.repositoryId });
     // some deep cloning
@@ -19,7 +19,7 @@ describe("moveInstanceAfterStrategy", () => {
     const regionClone = JSON.parse(JSON.stringify(region));
     const widgetClone = JSON.parse(JSON.stringify(widget));
     // exec
-    moveInstanceAfterStrategy({
+    moveInstanceBeforeStrategy({
       layout,
       region,
       widget,
@@ -34,7 +34,7 @@ describe("moveInstanceAfterStrategy", () => {
     // widget (refInstance) have replaced by mainInstance
     expect(layout.regions.length).toEqual(layoutClone.regions.length);
     expect(region.widgets.length).toEqual(regionClone.widgets.length + 1);
-    expect(region.widgets[widgetIndex + 1]).toEqual({
+    expect(region.widgets[widgetIndex]).toEqual({
       displayName: mainInstance.displayName,
       repositoryId: mainInstance.repositoryId,
       descriptor: {

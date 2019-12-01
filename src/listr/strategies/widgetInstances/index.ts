@@ -1,11 +1,11 @@
-import { OperationTypes } from "../../types/inquirer/OperationTypes";
+import { OperationTypes } from "../../../types/inquirer/operationTypes";
 import { replaceInstanceStrategy } from "./replaceInstanceStrategy";
 import { moveInstanceAfterStrategy } from "./moveInstanceAfterStrategy";
 import { moveInstanceBeforeStrategy } from "./moveInstanceBeforeStrategy";
 import { insertInstanceAfterStrategy } from "./insertInstanceAfterStrategy";
 import { insertInstanceBeforeStrategy } from "./insertInstanceBeforeStrategy";
 import { removeInstanceStrategy } from "./removeInstanceStrategy";
-import { InstanceOperationStrategy } from "../../types/listr/InstanceOperationStrategy";
+import { InstanceOperationStrategy } from "../../../types/listr/InstanceOperationStrategy";
 
 const OperationMapping = {
   [OperationTypes.removeInstance]: removeInstanceStrategy,

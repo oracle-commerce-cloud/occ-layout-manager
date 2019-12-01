@@ -1,4 +1,4 @@
-import { useApi } from "../../src/api";
+import { useApi } from "@api";
 import mockAxios from "jest-mock-axios";
 
 import loginResponse from "../mock/loginResponse.json";

@@ -1,5 +1,5 @@
 import { resources, useTranslate } from "../mock/useTranslateMock";
-import { t } from "../../src/locales/translate";
+import { t } from "@locales/translate";
 
 describe("locales/translate", () => {
   beforeEach(useTranslate.mockClear);

@@ -1,8 +1,8 @@
-import { insertInstanceAfterStrategy } from "../../../src/listr/strategies/insertInstanceAfterStrategy";
+import { insertInstanceAfterStrategy } from "@listr/strategies/widgetInstances/insertInstanceAfterStrategy";
 
-import { findInstance } from "../../../src/helpers/findInstance";
+import { findInstance } from "@helpers/findInstance";
 
-import layoutStructure from "../../mock/layoutStructure.json";
+import layoutStructure from "../../../mock/layoutStructure.json";
 
 describe("insertInstanceAfterStrategy", () => {
   it("should be defined", async () => {
@@ -10,8 +10,8 @@ describe("insertInstanceAfterStrategy", () => {
   });
 
   it("should insert mainInstance After refInstance.", async () => {
-    const refInstance = require("../../mock/refInstance.json");
-    const mainInstance = require("../../mock/mainInstance.json");
+    const refInstance = require("../../../mock/refInstance.json");
+    const mainInstance = require("../../../mock/mainInstance.json");
     const { layout } = JSON.parse(JSON.stringify(layoutStructure));
     const { region, widget, widgetIndex } = findInstance({ layout, instanceId: refInstance.repositoryId });
     // some deep cloning
@@ -47,8 +47,8 @@ describe("insertInstanceAfterStrategy", () => {
   });
 
   it("should insert mainInstance After refInstance (with source).", async () => {
-    const refInstance = require("../../mock/refInstance.json");
-    const mainInstance = require("../../mock/mainInstance.json");
+    const refInstance = require("../../../mock/refInstance.json");
+    const mainInstance = require("../../../mock/mainInstance.json");
     const { layout } = JSON.parse(JSON.stringify(layoutStructure));
     const { region, widget, widgetIndex } = findInstance({ layout, instanceId: refInstance.repositoryId });
     // set source for the mainInstance

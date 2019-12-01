@@ -1,4 +1,4 @@
-import { useTranslate } from "../../src/helpers/useTranslate";
+import { useTranslate } from "@helpers/useTranslate";
 import { resources as en } from "../../src/locales/en.json";
 import { resources as fr } from "../../src/locales/fr.json";
 

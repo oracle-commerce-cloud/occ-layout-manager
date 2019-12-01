@@ -1,9 +1,9 @@
-import { removeInstanceStrategy } from "../../../src/listr/strategies/removeInstanceStrategy";
+import { removeInstanceStrategy } from "@listr/strategies/widgetInstances/removeInstanceStrategy";
 
-import { findInstance } from "../../../src/helpers/findInstance";
-import { WidgetInstance } from "../../../src/types/api/layoutStructure";
+import { findInstance } from "@helpers/findInstance";
+import { WidgetInstance } from "@Types/api/layoutStructure";
 
-import layoutStructure from "../../mock/layoutStructure.json";
+import layoutStructure from "../../../mock/layoutStructure.json";
 
 describe("removeInstanceStrategy", () => {
   it("should be defined", async () => {
@@ -12,7 +12,7 @@ describe("removeInstanceStrategy", () => {
 
   it("should remove mainInstance.", async () => {
     const refInstance: WidgetInstance = undefined;
-    const mainInstance = require("../../mock/refInstance.json");
+    const mainInstance = require("../../../mock/refInstance.json");
     const { layout } = JSON.parse(JSON.stringify(layoutStructure));
     const { region, widget, widgetIndex } = findInstance({ layout, instanceId: mainInstance.repositoryId });
     // some deep cloning

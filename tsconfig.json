@@ -13,13 +13,15 @@
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "node_modules/*",
-        "src/types/*"
-      ]
+      "@api": [ "src/api/" ],
+      "@api/*": [ "src/api/*" ],
+      "@helpers/*": [ "src/helpers/*" ],
+      "@inquirer": [ "src/inquirer" ],
+      "@inquirer/*": [ "src/inquirer/*" ],
+      "@listr": [ "src/listr" ],
+      "@listr/*": [ "src/listr/*" ],
+      "@locales/*": [ "src/locales/*" ],
+      "@Types/*": [ "src/types/*" ]
     }
-  },
-  "include": [
-    "src/**/*"
-  ]
+  }
 }

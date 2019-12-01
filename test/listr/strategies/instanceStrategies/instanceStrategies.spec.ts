@@ -1,11 +1,11 @@
-import { instanceOperationFactory } from "../../../src/listr/strategies";
-import { removeInstanceStrategy } from "../../../src/listr/strategies/removeInstanceStrategy";
-import { OperationTypes } from "../../../src/types/inquirer/OperationTypes";
-import { replaceInstanceStrategy } from "../../../src/listr/strategies/replaceInstanceStrategy";
-import { insertInstanceBeforeStrategy } from "../../../src/listr/strategies/insertInstanceBeforeStrategy";
-import { insertInstanceAfterStrategy } from "../../../src/listr/strategies/insertInstanceAfterStrategy";
-import { moveInstanceBeforeStrategy } from "../../../src/listr/strategies/moveInstanceBeforeStrategy";
-import { moveInstanceAfterStrategy } from "../../../src/listr/strategies/moveInstanceAfterStrategy";
+import { instanceOperationFactory } from "@listr/strategies/widgetInstances";
+import { removeInstanceStrategy } from "@listr/strategies/widgetInstances/removeInstanceStrategy";
+import { OperationTypes } from "@Types/inquirer/operationTypes";
+import { replaceInstanceStrategy } from "@listr/strategies/widgetInstances/replaceInstanceStrategy";
+import { insertInstanceBeforeStrategy } from "@listr/strategies/widgetInstances/insertInstanceBeforeStrategy";
+import { insertInstanceAfterStrategy } from "@listr/strategies/widgetInstances/insertInstanceAfterStrategy";
+import { moveInstanceBeforeStrategy } from "@listr/strategies/widgetInstances/moveInstanceBeforeStrategy";
+import { moveInstanceAfterStrategy } from "@listr/strategies/widgetInstances/moveInstanceAfterStrategy";
 
 describe("instance Strategies", () => {
   describe("instanceOperationFactory", () => {

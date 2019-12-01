@@ -9,7 +9,7 @@
     "test": "jest --forceExit --coverage --verbose",
     "coveralls": "jest --forceExit --coverage --coverageReporters=text-lcov | coveralls",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"tsc -w\" \"npm run watch-node\"",
-    "watch-node": "npm run build && nodemon --delay 1 dist/index.js -k $KSTAGR -n $NSTAGE",
+    "watch-node": "npm run build && nodemon --delay 1 dist/index.js -k $KSTAGE -n $NSTAGE",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "format": "prettier-tslint fix \"./**/*.ts\"",
     "prepack": "echo \"prepack...\" && yarn build"

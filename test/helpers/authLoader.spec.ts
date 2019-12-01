@@ -1,6 +1,6 @@
-import { authLoader } from "../../src/helpers/authLoader";
 import ora = require("ora");
-import { t } from "../../src/locales/translate";
+import { authLoader } from "@helpers/authLoader";
+import { t } from "@locales/translate";
 
 jest.useFakeTimers();
 let spinner = ora();

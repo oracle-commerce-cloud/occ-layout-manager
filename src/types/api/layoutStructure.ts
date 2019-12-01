@@ -5,6 +5,7 @@ export interface WidgetInstance {
     repositoryId: string;
     minWidth: number;
     editableWidget: boolean;
+    widgetType?: string;
     source?: number;
   };
 }

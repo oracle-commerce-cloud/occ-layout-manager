@@ -1,4 +1,4 @@
-import { useInterval } from "../../src/helpers/useInterval";
+import { useInterval } from "@helpers/useInterval";
 import { useTranslate } from "../mock/useTranslateMock";
 import { timeInterval } from "rxjs/internal/operators";
 
