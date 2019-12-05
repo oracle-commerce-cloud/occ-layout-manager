@@ -2,12 +2,12 @@ import { resources as en } from "../locales/en.json";
 import { resources as fr } from "../locales/fr.json";
 
 const resourcesMapping: { [key: string]: any } = { en, fr };
-// en is default local
+// en is default locale
 let resources: { [key: string]: string } = en;
 
-export function useTranslate (local?: string) {
-  if (local) {
-    resources = resourcesMapping[local] || resources;
+export function useTranslate (locale?: string) {
+  if (locale) {
+    resources = resourcesMapping[locale] || resources;
   }
   return { resources };
 }

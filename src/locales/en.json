@@ -20,7 +20,7 @@
     "fetchListLayouts": "Fetch the list of layouts.",
     "filterListLayouts": "Filter the layouts.",
 
-    "programDescription": "In progress",
+    "programDescription": "A tool to manage OCC's layouts and widget instances.",
 
     "operationType": "Choose an operation from the list below",
     "removeInstance": "Detach an instance from all layouts.",
@@ -36,7 +36,7 @@
     "insertInstanceAfter.mainInstance": "Select an instance to insert after",
     "moveInstanceBefore.mainInstance": "Select an instance to move before",
     "moveInstanceAfter.mainInstance": "Select an instance to move after",
-    
+
     "replaceInstance.refInstance": "Select the desired instance to be detached",
     "insertInstanceBefore.refInstance": "Select a reference instance",
     "insertInstanceAfter.refInstance": "Select a reference instance",

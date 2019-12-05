@@ -1,18 +1,25 @@
 {
   "name": "occ-layout-manager",
+  "description": "Simple oracle-commerce-cloud layout/instances manager",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "bin": "dist/index.js",
+  "bin": {
+    "olm": "dist/index.js"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.pack.json",
     "test": "jest --forceExit --coverage --verbose",
     "coveralls": "jest --forceExit --coverage --coverageReporters=text-lcov | coveralls",
-    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"tsc -w\" \"npm run watch-node\"",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"tsc -p tsconfig.pack.json -w\" \"npm run watch-node\"",
     "watch-node": "npm run build && nodemon --delay 1 dist/index.js -k $KSTAGE -n $NSTAGE",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint": "tslint -c tslint.json -p tsconfig.pack.json",
     "format": "prettier-tslint fix \"./**/*.ts\"",
     "prepack": "echo \"prepack...\" && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oracle-commerce-cloud/occ-layout-manager.git"
   },
   "husky": {
     "hooks": {
@@ -23,14 +30,15 @@
     "*.(ts|tsx)": "prettier-tslint fix"
   },
   "dependencies": {
-    "inquirer-autocomplete-prompt": "latest",
+    "axios": "^0.19.0",
     "commander": "^3.0.2",
     "inquirer": "^7.0.0",
-    "axios": "^0.19.0",
+    "inquirer-autocomplete-prompt": "latest",
     "listr": "^0.14.3",
-    "rxjs": "^6.5.3",
+    "module-alias": "^2.2.2",
     "ora": "latest",
-    "qs": "^6.9.0"
+    "qs": "^6.9.0",
+    "rxjs": "^6.5.3"
   },
   "devDependencies": {
     "@types/inquirer": "^6.5.0",
@@ -52,6 +60,14 @@
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
     "typescript": "^3.6.4"
+  },
+  "_moduleAliases": {
+    "@api": "dist/api",
+    "@helpers": "dist/helpers",
+    "@inquirer": "dist/inquirer",
+    "@listr": "dist/listr",
+    "@locales": "dist/locales",
+    "@Types": "dist/types"
   },
   "types": "dist/index.d.ts",
   "files": [

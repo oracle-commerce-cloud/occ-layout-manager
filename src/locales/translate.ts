@@ -1,4 +1,4 @@
-import { useTranslate } from "../helpers/useTranslate";
+import { useTranslate } from "@helpers/useTranslate";
 
 export function t (resourcesKey: string, params?: { [key: string]: any }): string {
   const { resources } = useTranslate();

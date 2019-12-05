@@ -1,8 +1,12 @@
 import program from "commander";
-import { UseApiProps } from "../api";
-import { t } from "../locales/translate";
+import { UseApiProps } from "@api";
+import { t } from "@locales/translate";
 
-export const useCommonder = (): UseApiProps => {
+interface UseCommonder extends UseApiProps {
+  locale: string;
+}
+
+export const useCommonder = (): UseCommonder => {
   program
     .description(t("programDescription"))
     .option(
@@ -12,9 +16,10 @@ export const useCommonder = (): UseApiProps => {
     .option(
       "-k, --applicationKey <key>",
       "The application key to use to log in to the Commerce Cloud administration interface",
-    );
+    )
+    .option("-l, --locale <iso>", "default: en, values: en, fr");
 
   program.parse(process.argv);
 
-  return (program as any) as UseApiProps;
+  return (program as any) as UseCommonder;
 };
