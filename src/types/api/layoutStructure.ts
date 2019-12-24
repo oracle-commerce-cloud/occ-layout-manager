@@ -1,4 +1,5 @@
 export interface WidgetInstance {
+  pageIds?: string[];
   repositoryId: string;
   displayName: string;
   descriptor: {

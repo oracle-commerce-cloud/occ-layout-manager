@@ -1,4 +1,12 @@
 {
+  "pages": [
+    "home",
+    "product"
+  ],
+  "pageIds": [
+    "homePage",
+    "productPage"
+  ],
   "displayName": "Collection Navigation Widget",
   "repositoryId": "megaMenuInst",
   "descriptor": {

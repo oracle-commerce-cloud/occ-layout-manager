@@ -17,7 +17,7 @@ export const useCommonder = (): UseCommonder => {
       "-k, --applicationKey <key>",
       "The application key to use to log in to the Commerce Cloud administration interface",
     )
-    .option("-l, --locale <iso>", "default: en, values: en, fr");
+    .option("-l, --locale <locale>", "default: en ", /^(en|fr)$/i, "en");
 
   program.parse(process.argv);
 
